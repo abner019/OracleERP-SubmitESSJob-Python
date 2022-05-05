@@ -1,8 +1,7 @@
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Pycharm](https://www.sublimetext.com/). 
-Além disto é bom ter um editor para trabalhar com o código como [Sublime](https://www.sublimetext.com/). Além 
+[Git](https://git-scm.com), [Pycharm](https://www.sublimetext.com/). Além 
 de tambem ter acesso a um ambiente Oracle ERP Cloud 
 
 #### Submetendo um ESSJob no Oracle

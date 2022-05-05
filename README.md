@@ -26,7 +26,7 @@ select NAME,DATATYPE,VALUE
     and name like 'submit%'
 
 # Com as informacoes em mãos, preencha o seu payload:
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://xmlns.oracle.com/scheduler" xmlns:typ="http://xmlns.oracle.com/scheduler/types" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+                <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://xmlns.oracle.com/scheduler" xmlns:typ="http://xmlns.oracle.com/scheduler/types" xmlns:wsa="http://www.w3.org/2005/08/addressing">
                    <soapenv:Header>
                       <wsa:Action>submitRequest</wsa:Action>
                       <wsa:MessageID>urn:uuid:de3b8096-6576-4fef-a254-797e56ce29a4</wsa:MessageID>

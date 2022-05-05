@@ -1,5 +1,5 @@
-### Como Submeter um Scheduled Processes por Web Services utilizando Python
-
+### Como Submeter um Scheduled Processes (ESSJOB) por Web Services utilizando Python
+Os ESSJobs são programas baseados em PL/SQL, Relatórios BIP, Host, SQL Loader e outras tecnologias para executar lógica de negócios. Existem muitos  ESS padrão/semeados disponíveis no Oracle Fusion e muitas vezes é preciso disparar um processo através de um script ou integração.
 
 ### Pré-requisitos
 
@@ -75,4 +75,21 @@ select NAME,DATATYPE,VALUE
  -> url: enpoint do serviço
  -> userName: usuario
  -> pwd: senha
+
+# Execute o script, e aguarde um resposta identica a essa:
+
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+   <env:Header>
+      <wsa:Action>submitRequest</wsa:Action>
+      <wsa:MessageID>urn:uuid:de3b8096-6576-4fef-a254-797e56ce29a4</wsa:MessageID>
+      <wsa:RelatesTo>urn:uuid:f1d875e4-d718-40ba-9a8e-65733cf0733f</wsa:RelatesTo>
+   </env:Header>
+   <env:Body>
+      <ns0:submitRequestResponse xmlns:ns0="http://xmlns.oracle.com/scheduler">
+         <requestId xsi:type="xsd:long" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">4082803</requestId>
+      </ns0:submitRequestResponse>
+   </env:Body>
+</env:Envelope>
+
+
 
